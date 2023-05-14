@@ -38,5 +38,10 @@ MopsNews - це мобільний додаток який збергає інф
 Для коректної роботи додатку потрібна Android версії 8.0 або вище.
 
 
+![image](https://github.com/FunnyMopsik/MopsNews/assets/91189005/abfd753f-65ee-469e-900c-291d686f50bc)
+![image](https://github.com/FunnyMopsik/MopsNews/assets/91189005/589fb5a7-bb3f-479b-a46e-3f0528e7385d)
+
+
+
 
 
