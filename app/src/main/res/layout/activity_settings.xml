@@ -46,7 +46,24 @@
             android:src="@drawable/account" />
 
     </RelativeLayout>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:text="Повідомлення"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/menu"
+        android:id="@+id/notif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
 
+    <Switch
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintLeft_toRightOf="@+id/notif"
+        android:id="@+id/Spolitic"
+        tools:ignore="MissingConstraints" />
 
 
 

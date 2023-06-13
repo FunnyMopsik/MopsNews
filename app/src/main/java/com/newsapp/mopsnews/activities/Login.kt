@@ -1,5 +1,6 @@
 package com.newsapp.mopsnews.activities
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -37,10 +38,13 @@ class Login : AppCompatActivity() {
             if(email.text.toString().isNotEmpty() && password.text.toString().isNotEmpty()){
                 firebase.signInWithEmailAndPassword(email.text.toString().lowercase(),password.text.toString()).addOnCompleteListener {
                     if(it.isSuccessful){
-
+                        val sharedPreferences = getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
+                        val editor = sharedPreferences.edit()
+                        editor.putBoolean("logined", true).apply()
                         setContentView(R.layout.activity_show_news)
                         val intent = Intent(this@Login, ShowNews::class.java)
                         startActivity(intent)
+                        finish()
 
                     }else{
                         Toast.makeText(this, "Дані не вірні", Toast.LENGTH_LONG).show()

@@ -1,5 +1,6 @@
 package com.newsapp.mopsnews.activities
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -40,8 +41,12 @@ class Account : AppCompatActivity() {
             startActivity(intent)
         }
         logout.setOnClickListener {
+            val sharedPreferences = getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
+            val editor = sharedPreferences.edit()
+            editor.putBoolean("logined", false).apply()
             val intent = Intent(this@Account, Login::class.java)
             startActivity(intent)
+            finish()
         }
         changePass.setOnClickListener {
             val intent = Intent(this@Account, ChangePass::class.java)
