@@ -20,7 +20,8 @@ class news_desc_web : AppCompatActivity() {
         myWebView= findViewById(R.id.webview)
         myWebView.setWebViewClient(WebViewClient())
         myWebView.settings.javaScriptEnabled = true
-        val url=intent.getStringExtra("url")
+        val str=intent.getStringExtra("url")
+        val url = str?.substringBefore(",")
         Log.i("new url",url.toString())
         myWebView.loadUrl(url.toString())
 
