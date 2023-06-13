@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,20 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MopsNews"
         tools:targetApi="31">
+        <service android:name=".service.NewsParsingService"/>
         <activity
-            android:name=".Alert"
+            android:name=".activities.Alert"
             android:exported="false" />
         <activity
-            android:name=".Settings"
+            android:name=".activities.Settings"
             android:exported="false" />
         <activity
-            android:name=".Account"
+            android:name=".activities.Account"
             android:exported="false" />
         <activity
-            android:name=".ChangePass"
+            android:name=".activities.ChangePass"
             android:exported="false" />
         <activity
-            android:name=".news_desc_web"
+            android:name=".activities.news_desc_web"
             android:exported="false" />
         <activity
             android:name=".activities.ShowNews"

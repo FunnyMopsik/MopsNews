@@ -12,7 +12,6 @@ import com.google.firebase.database.*
 import com.newsapp.mopsnews.MyAdapter
 import com.newsapp.mopsnews.News
 import com.newsapp.mopsnews.R
-import news_desc_web
 
 class ShowNews : AppCompatActivity() {
 
@@ -80,7 +79,7 @@ class ShowNews : AppCompatActivity() {
                             val intent = Intent(this@ShowNews,news_desc_web::class.java)
                             intent.putExtra("url",url)
                             startActivity(intent)
-
+                            setContentView(R.layout.activity_news_desc_web)
 
 
                         }

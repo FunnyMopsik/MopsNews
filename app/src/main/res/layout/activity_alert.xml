@@ -47,6 +47,79 @@
             android:src="@drawable/account" />
 
     </RelativeLayout>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:text="Новини спорту"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/menu"
+        android:id="@+id/sport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/politic"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/Ssport"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:text="Новини політики"
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@id/sport"
+        app:layout_constraintLeft_toRightOf="@+id/menu"
+        android:id="@+id/politic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <Switch
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Ssport"
+        app:layout_constraintLeft_toRightOf="@+id/politic"
+        android:id="@+id/Spolitic"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:text="Гумор"
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@id/politic"
+        app:layout_constraintLeft_toRightOf="@+id/menu"
+        android:id="@+id/humor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <Switch
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Spolitic"
+        app:layout_constraintLeft_toRightOf="@+id/politic"
+        android:id="@+id/Shumor"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:text="Новини ігор"
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@id/humor"
+        app:layout_constraintLeft_toRightOf="@+id/menu"
+        android:id="@+id/game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <Switch
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Shumor"
+        app:layout_constraintLeft_toRightOf="@+id/politic"
+        android:id="@+id/Sgame"
+        tools:ignore="MissingConstraints" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
